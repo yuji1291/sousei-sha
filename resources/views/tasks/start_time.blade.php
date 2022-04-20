@@ -1,0 +1,9 @@
+ <script>
+jQuery(document).ready(function($){
+$("#picker1").bootstrapMaterialDatePicker({
+weekStart:0,
+date:false,
+format:"HH:mm"
+});
+});
+</script>
