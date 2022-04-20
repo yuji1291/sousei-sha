@@ -39,7 +39,7 @@
         {!! Form::submit('削除', ['class' => 'btn btn-danger']) !!}
     {!! Form::close() !!}
     @else
-    @include('shares.share_button' ,['task' => $task])
+    {{--@include('shares.share_button' ,['task' => $task]) --}}
     @endif
     </div>
 @endsection

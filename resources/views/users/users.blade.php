@@ -9,8 +9,8 @@
                         {{ $user->name }}
                         <p>{!! link_to_route('users.show', 'スケジュール', ['id' => $user->id]) !!}</p>
                         </div>
-                    @include('user_follow.follow_button', ['user' => $user])
-                    </div>
+                    {{-- @include('user_follow.follow_button', ['user' => $user])
+                    </div> --}}
                 </div>
             </li>
         @endforeach
