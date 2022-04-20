@@ -14,13 +14,18 @@
         <div class="text-center">
             <h1>ようこそ、Connect ver1.01へ</h1>
             <div class="row">
-                <div class="col-sm-7 offset-sm-3">
-                    <a>ここはユーザー同士のタスクを共有できるスケジュール管理サイトです。<br>
-                        まずはユーザー登録をお願いします。<br>
-                        ↓↓<a>
-                    <div>
-                        {!! link_to_route('signup.get', 'ユーザー登録', [], ['class' => 'btn btn-lg btn-primary']) !!}
+                <div class="col-sm-6 offset-sm-3 mt-5">
+                     {!! Form::open(['route' => 'login.post']) !!}
+                        <div class="form-group">
+                            {!! Form::label('email', 'メールアドレス') !!}
+                            {!! Form::email('email', old('email'), ['class' => 'form-control']) !!}
+                        </div>
+                    <div class="form-group">
+                        {!! Form::label('password', 'パスワード') !!}
+                        {!! Form::password('password', ['class' => 'form-control']) !!}
                     </div>
+                        {!! Form::submit('ログイン', ['class' => 'btn btn-primary btn-block']) !!}
+                        {!! Form::close() !!}
                 </div>
             </div>
         </div>

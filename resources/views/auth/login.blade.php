@@ -21,8 +21,6 @@
 
                 {!! Form::submit('ログイン', ['class' => 'btn btn-primary btn-block']) !!}
             {!! Form::close() !!}
-
-            <p class="mt-2">ユーザー登録をお願いします。 {!! link_to_route('signup.get', '登録画面') !!}</p>
         </div>
     </div>
 @endsection
